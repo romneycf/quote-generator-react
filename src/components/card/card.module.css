@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    min-height: 35vh;
+    min-width: 35vw;
+    box-shadow: 2px 2px 15px 0px var(--color-secondary);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-secondary);
+}
