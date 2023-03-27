@@ -2,7 +2,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 100px;
 }
@@ -10,23 +9,64 @@
 #quote-box {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
+  justify-content: space-between;
+  height: 100%;
+  color: var(--color-secondary);
+  /* border: 1px solid green; */
 }
 
-#text{
+#text {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  background-color: var(--color-tertiary);
+  padding: var(--padding-lg);
+  font-family: "Special Elite", cursive;
+  font-size: 20px;
+  /* border: 1px solid red; */
 }
 
-#author{
+#author {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
+  align-items: end;
+  padding: var(--padding-lg);
+  font-size: 16px;
+  /* border: 1px solid blue; */
 }
 
-#buttons-wrapper{
+#buttons-wrapper {
   display: flex;
   flex-direction: row;
-  border: 1px solid blue;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+#tweet-quote{
+  font-size: 30px;
+  color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+}
+
+#tweet-quote:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(0, -1px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 4px, 0);
+  }
 }
